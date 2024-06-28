@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Rise Transcribe</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #ff4b5c, #4b79a1);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .project-option {
+            margin: 10px 0;
+        }
+
+        .payment-option {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Remote Rise Transcribe</h1>
+        <button id="start-button">Start</button>
+        <div id="instructions" class="hidden">
+            <h2>Instructions</h2>
+            <p>You’ll be provided with images or audio and will be required to type them into the text in Microsoft Word without making any changes or correction, following all the steps instructed.</p>
+            <h3>Types of projects</h3>
+            <p>Mega projects are contracted to employees/freelancers who can handle such projects and deliver it on time. The projects include educational research, medical research, legal document, history text, novels etc.</p>
+            
+            <h3>Mega Project 1:</h3>
+            <ul>
+                <li>Registration Fee: $1,000 USD (refundable on successful completion of first assignment)</li>
+                <li>Total images or audios: 150</li>
+                <li>Time limits: 3 days (including holidays)</li>
+                <li>Payment per page: $50 USD</li>
+                <li>Total Payment: $7,500 USD</li>
+                <li>Total Payment (Reg. Fee Inclusive): $8,500 USD</li>
+            </ul>
+            
+            <h3>Mega Project 2:</h3>
+            <ul>
+                <li>Registration Fee: $500 USD (refundable on successful completion of first assignment)</li>
+                <li>Total images or audios: 100</li>
+                <li>Time limits: 3 days (including holidays)</li>
+                <li>Payment per page: $50 USD</li>
+                <li>Total Payment: $5,000 USD</li>
+                <li>Total Payment (Reg. Fee Inclusive): $5,500 USD</li>
+            </ul>
+            
+            <h3>Mini Project 1:</h3>
+            <ul>
+                <li>Registration Fee: $200 USD (refundable on successful completion of first assignment)</li>
+                <li>Total images or audios: 80</li>
+                <li>Time limits: 2 days (including holidays)</li>
+                <li>Payment per page: $50 USD</li>
+                <li>Total Payment: $4,000 USD</li>
+                <li>Total Payment (Reg. Fee Inclusive): $4,200 USD</li>
+            </ul>
+
+            <h3>Mini Project 2:</h3>
+            <ul>
+                <li>Registration Fee: $150 USD (refundable on successful completion of first assignment)</li>
+                <li>Total images or audios: 60</li>
+                <li>Time limits: 2 days (including holidays)</li>
+                <li>Payment per page: $50 USD</li>
+                <li>Total Payment: $3,000 USD</li>
+                <li>Total Payment (Reg. Fee Inclusive): $3,150 USD</li>
+            </ul>
+            
+            <h3>Mini Project 3:</h3>
+            <ul>
+                <li>Registration Fee: $100 USD (refundable on successful completion of first assignment)</li>
+                <li>Total images or audios: 50</li>
+                <li>Time limits: 2 days (including holidays)</li>
+                <li>Payment per page: $50 USD</li>
+                <li>Total Payment: $2,500 USD</li>
+                <li>Total Payment (Reg. Fee Inclusive): $2,600 USD</li>
+            </ul>
+            
+            <h3>Mini Project 4:</h3>
+            <ul>
+                <li>Registration Fee: $80 USD (refundable on successful completion of first assignment)</li>
+                <li>Total images or audios: 40</li>
+                <li>Time limits: 2 days (including holidays)</li>
+                <li>Payment per page: $50 USD</li>
+                <li>Total Payment: $2,000 USD</li>
+                <li>Total Payment (Reg. Fee Inclusive): $2,080 USD</li>
+            </ul>
+            
+            <h3>Technical Instruction:</h3>
+            <ul>
+                <li>Make separate file for each image.</li>
+                <li>Put only 1 space between two words.</li>
+            </ul>
+            
+            <h3>How to Start</h3>
+            <p>First Step reply to me with your Freelancer or Fiverr Username, Country name and your decision about the project (which project you have selected from the above four) and follow the steps mention below.</p>
+            <ul>
+                <li>Deposit the Registration Fee according as stated the selected project via any payment method suitable for you.</li>
+                <li>After that fill out the Form (which will be sent to you via electronic means).</li>
+                <li>You will get your work on your email address within 1-3 hours after submission of form. Next assignment will be given after checking your accuracy and it will take almost two days.</li>
+                <li>If the Typist wants to take the break in between, he/she will have to inform us via email at the time of submission.</li>
+                <li>Payment will be made via any method suitable for you.</li>
+            </ul>
+            
+            <h3>Select a Project:</h3>
+            <div class="project-option">
+                <label><input type="radio" name="project" value="Mega Project 1"> Mega Project 1 - $1,000 USD</label>
+            </div>
+            <div class="project-option">
+                <label><input type="radio" name="project" value="Mega Project 2"> Mega Project 2 - $500 USD</label>
+            </div>
+            <div class="project-option">
+                <label><input type="radio" name="project" value="Mini Project 1"> Mini Project 1 - $200 USD</label>
+            </div>
+            <div class="project-option">
+                <label><input type="radio" name="project" value="Mini Project 2"> Mini Project 2 - $150 USD</label>
+            </div>
+            <div class="project-option">
+                <label><input type="radio" name="project" value="Mini Project 3"> Mini Project 3 - $100 USD</label>
+            </div>
+            <div class="project-option">
+                <label><input type="radio" name="project" value="Mini Project 4"> Mini Project 4 - $80 USD</label>
+            </div>
+            
+            <h3>Select a Payment Method:</h3>
+            <div class="payment-option">
+                <label><input type="radio" name="payment" value="Ethereum"> Ethereum (ETH)</label>
+            </div>
+            <div class="payment-option">
+                <label><input type="radio" name="payment" value="USDT"> USDT</label>
+            </div>
+            <div class="payment-option">
+                <label><input type="radio" name="payment" value="Bitcoin"> Bitcoin (BTC)</label>
+            </div>
+            <div class="payment-option">
+                <label><input type="radio" name="payment" value="BNB"> BNB</label>
+            </div>
+            <div class="payment-option">
+                <label><input type="radio" name="payment" value="Solana"> Solana (SOL)</label>
+            </div>
+            
+            <button id="submit-button">Submit</button>
+        </div>
+        <div id="payment-info" class="hidden">
+            <h2>Payment Information</h2>
+            <p id="payment-address"></p>
+            <p>Please send the payment to the above address and send the confirmation of payment to <strong>ilexclips@gmail.com</strong>.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('start-button').addEventListener('click', function() {
+            document.getElementById('start-button').classList.add('hidden');
+            document.getElementById('instructions').classList.remove('hidden');
+            document.body.style.background = 'linear-gradient(120deg, #ff4b5c, #4b79a1)'; // Keep gradient background
+        });
+
+        document.getElementById('submit-button').addEventListener('click', function() {
+            const selectedProject = document.querySelector('input[name="project"]:checked');
+            const selectedPayment = document.querySelector('input[name="payment"]:checked');
+            
+            if (selectedProject && selectedPayment) {
+                let paymentAddress = '';
+                switch(selectedPayment.value) {
+                    case 'Ethereum':
+                        paymentAddress = 'Ethereum (ETH) address: 0x7c0c7396eba0a1003fcfe8d04b120421e9c058a8';
+                        break;
+                    case 'USDT':
+                        paymentAddress = 'USDT (USDT) address: 0x7c0c7396eba0a1003fcfe8d04b120421e9c058a8';
+                        break;
+                    case 'Bitcoin':
+                        paymentAddress = 'Bitcoin (BTC) address: bc1pptpzrf586wwnfguygsm39twws5mfsdkw7nkh09x8rsxuklv6hhrscgq9le';
+                        break;
+                    case 'BNB':
+                        paymentAddress = 'BNB (BNB) address: 0x7c0c7396eba0a1003fcfe8d04b120421e9c058a8';
+                        break;
+                    case 'Solana':
+                        paymentAddress = 'Solana (SOL) address: D6MwWqM59bCccgkS5ui8WwYt7ommZrL4PEhdGGstdbPj';
+                        break;
+                }
+                
+                document.getElementById('instructions').classList.add('hidden');
+                document.getElementById('payment-info').classList.remove('hidden');
+                document.getElementById('payment-address').innerText = paymentAddress;
+            } else {
+                alert('Please select a project and a payment method.');
+            }
+        });
+    </script>
+</body>
+</html>
