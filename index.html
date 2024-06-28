@@ -19,10 +19,12 @@
 
         .container {
             max-width: 800px;
-            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            background-color: white;
             padding: 20px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            overflow: hidden;
         }
 
         h1 {
@@ -61,12 +63,18 @@
             margin-bottom: 10px;
         }
 
-        .project-option {
+        .project-option, .payment-option {
             margin: 10px 0;
+            display: flex;
+            align-items: center;
         }
 
-        .payment-option {
-            margin: 5px 0;
+        .project-option label, .payment-option label {
+            flex-grow: 1;
+        }
+
+        .project-option input, .payment-option input {
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -195,6 +203,7 @@
             
             <button id="submit-button">Submit</button>
         </div>
+
         <div id="payment-info" class="hidden">
             <h2>Payment Information</h2>
             <p id="payment-address"></p>
