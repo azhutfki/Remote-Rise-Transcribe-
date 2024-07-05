@@ -71,66 +71,65 @@
             </div>
             <div id="instructions" class="section" style="display:none;">
                 <div class="section-title">Instructions:</div>
-                <p>You’ll be provided with images or audio and will be required to type them into text in Microsoft Word without making any changes or corrections, following all the steps instructed.</p>
-                
+                <p>You’ll be provided with images or audio and will be required to type them into text in Microsoft Word without making any changes or correction, following all the steps instructed.</p>
                 <div class="section-title">Types of projects:</div>
                 <p>Mega projects are contracted to employees/freelancers capable of handling and delivering them on time. These projects encompass educational research, medical research, legal documents, historical texts, novels, and more.</p>
-                
+
                 <div class="section-title">Mega Project 1:</div>
                 <p>Registration Fee (will be paid by employee) $500 USD (refundable on successful completion of first assignment)</p>
                 <p>Total images, videos, or audios: 150</p>
                 <p>Time limits: 14 days (including holidays)</p>
                 <p>Payment per page: $10 USD (per page)</p>
                 <p>Total Payment (Reg. Fee Inclusive): $8,500 USD</p>
-                
+
                 <div class="section-title">Mega Project 2:</div>
                 <p>Registration Fee (will be paid by employee) $400 USD (refundable on successful completion of first assignment)</p>
                 <p>Total images, videos, or audios: 100</p>
                 <p>Time limits: 10 days (including holidays)</p>
                 <p>Payment per page: $10 USD (per page)</p>
-                
+
                 <div class="section-title">Mini Project 1:</div>
                 <p>Registration Fee (will be paid by employee) $300 USD (refundable on successful completion of first assignment)</p>
                 <p>Total images, videos, or audios: 80</p>
                 <p>Time limits: 7 days (including holidays)</p>
                 <p>Payment per page: $10 USD (per page)</p>
-                
+
                 <div class="section-title">Mini Project 2:</div>
                 <p>Registration Fee (will be paid by employee) $200 USD (refundable on successful completion of first assignment)</p>
                 <p>Total images, videos, or audios: 60</p>
                 <p>Time limits: 6 days (including holidays)</p>
                 <p>Payment per page: $10 USD (per page)</p>
-                
+
                 <div class="section-title">Mini Project 3:</div>
                 <p>Registration Fee (will be paid by employee) $100 USD (refundable on successful completion of first assignment)</p>
                 <p>Total images, videos, or audios: 50</p>
                 <p>Time limits: 5 days (including holidays)</p>
                 <p>Payment per page: $10 USD (per page)</p>
-                
+
                 <div class="section-title">Mini Project 4:</div>
                 <p>Registration Fee (will be paid by employee) $80 USD (refundable on successful completion of first assignment)</p>
                 <p>Total images, videos, or audios: 40</p>
                 <p>Time limits: 4 days (including holidays)</p>
                 <p>Payment per page: $10 USD (per page)</p>
-                
+
                 <div class="section-title">NOTE:</div>
                 <p>A one-time registration fee is required to begin working with us, which will be refunded upon successful completion of your first assignment. However, if you choose to quit before finishing the project, the fee will not be refunded. This fee ensures your commitment to completing assignments punctually, as our work is ongoing and regular. You are welcome to take breaks after completing ongoing projects without any restrictions from our company.</p>
-                
+
                 <div class="section-title">TERMS AND CONDITIONS:</div>
                 <p>1. Projects must be completed within the deadlines provided by the company. Failure to submit your project on time will result in disqualification, and your registration fee will not be refunded.</p>
                 <p>2. Incomplete files or projects will not be accepted.</p>
                 <p>3. Create a separate document file for each image, ensuring that the name of each document file matches the name of the corresponding image file.</p>
-                
+
                 <div class="section-title">SOME IMPORTANT POINTS:</div>
                 <p>1. You will receive and submit projects via email.</p>
                 <p>2. You will receive your accuracy report and payment within 24 hours after submitting your work.</p>
                 <p>3. Payments will be made via any method suitable for you within 24 hours.</p>
                 <p>4. Projects can be changed or upgraded after selection.</p>
                 <p>5. A bonus of $20 or more will be paid if you submit your work before the deadline.</p>
-                
+
                 <div class="section-title">HOW TO START:</div>
                 <p>1. Make the registration payment for your selected project and send a confirmation of the payment to <a href="mailto:brittaniaocho@gmail.com">brittaniaocho@gmail.com</a>.</p>
-                
+
                 <button class="button" onclick="showProjects()">Choose a Project</button>
             </div>
             <div id="projects" class="section" style="display:none;">
@@ -146,49 +145,42 @@
                 <div class="section-title">Payment Options:</div>
                 <p>Selected Project: <span id="selected-project"></span></p>
                 <p>Registration Fee: $<span id="registration-fee"></span> USD</p>
-                <button class="button" onclick="showAddress('Bitcoin', 'bc1pptpzrf586wwnfguygsm39twws5mfsdkw7')">Bitcoin</button>
-                <button class="button" onclick="showAddress('PayPal', 'paypal@example.com')">PayPal</button>
-                <button class="button" onclick="showAddress('Bank Transfer', 'Bank Name: Example Bank<br>Account Name: John Doe<br>Account Number: 123456789<br>SWIFT Code: EXAMP123')">Bank Transfer</button>
+                <button class="button" onclick="showAddress('Bitcoin', 'bc1qplkaw68dxa0gdfpqvre8mle2t0sxnlaa866qhw')">Bitcoin (BTC)</button>
+                <button class="button" onclick="showAddress('Ethereum', '0x91AFEc045665BB001135D749842b0CeF8176eCb4')">Ethereum (ETH)</button>
+                <button class="button" onclick="showAddress('Solana', '9f4F2zAp2NRnaVaJPExu5iygy1hyh1pnap6cQigRS3QV')">Solana (SOL)</button>
+                <button class="button" onclick="showAddress('Polygon', '0x91AFEc045665BB001135D749842b0CeF8176eCb4')">Polygon (MATIC)</button>
             </div>
             <div id="address" class="section" style="display:none;">
                 <div class="section-title">Payment Address:</div>
-                <div id="payment-address" class="address"></div>
-                <button class="button" onclick="showCompletionMessage()">Submit Payment Confirmation</button>
-            </div>
-            <div id="completion-message" class="section" style="display:none;">
-                <div class="section-title">Payment Confirmation:</div>
-                <p>Your payment has been successfully confirmed. You will receive further instructions via email.</p>
+                <p>Selected Payment Method: <span id="selected-method"></span></p>
+                <p id="crypto-address" class="address"></p>
+                <p>Send confirmation of the payment to <a href="mailto:brittaniaocho@gmail.com">brittaniaocho@gmail.com</a>.</p>
             </div>
         </div>
     </div>
-
     <script>
         function showInstructions() {
             document.getElementById('welcome-screen').style.display = 'none';
             document.getElementById('instructions').style.display = 'block';
         }
-        
+
         function showProjects() {
             document.getElementById('instructions').style.display = 'none';
             document.getElementById('projects').style.display = 'block';
         }
-        
-        function showPayment(projectName, fee) {
+
+        function showPayment(project, fee) {
             document.getElementById('projects').style.display = 'none';
             document.getElementById('payment').style.display = 'block';
-            document.getElementById('selected-project').textContent = projectName;
+            document.getElementById('selected-project').textContent = project;
             document.getElementById('registration-fee').textContent = fee;
         }
-        
-        function showAddress(type, address) {
+
+        function showAddress(method, address) {
             document.getElementById('payment').style.display = 'none';
             document.getElementById('address').style.display = 'block';
-            document.getElementById('payment-address').innerHTML = address;
-        }
-        
-        function showCompletionMessage() {
-            document.getElementById('address').style.display = 'none';
-            document.getElementById('completion-message').style.display = 'block';
+            document.getElementById('selected-method').textContent = method;
+            document.getElementById('crypto-address').textContent = address;
         }
     </script>
 </body>
